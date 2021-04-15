@@ -178,6 +178,9 @@ def maxKey(analyzer):
     """
     return om.maxKey(analyzer['dateIndex'])
 
+def keys1(analyzer, initialDate, finalDate):
+   lst = om.keys(analyzer['dateIndex'], initialDate, finalDate) 
+   return lst
 
 def getCrimesByRange(analyzer, initialDate, finalDate):
     """

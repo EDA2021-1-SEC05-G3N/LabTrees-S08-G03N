@@ -102,6 +102,9 @@ def maxKey(analyzer):
     """
     return model.maxKey(analyzer)
 
+def keys1(analyzer, initialDate, finalDate):
+   respuesta = model.keys1(analyzer, initialDate, finalDate)
+   return respuesta
 
 def getCrimesByRange(analyzer, initialDate, finalDate):
     """

@@ -93,6 +93,13 @@ while True:
         print("\nTotal de ofensas tipo: " + offensecode + " en esa fecha:  " +
               str(numoffenses))
 
+    elif int(inputs[0]) == 5:
+        print("\nBuscando crimenes en un rango de fechas: ")
+        initialDate = input("Fecha Inicial (YYYY-MM-DD): ")
+        finalDate = input("Fecha Final (YYYY-MM-DD): ")
+        total = controller.keys1(cont, initialDate, finalDate)
+        print(total)
+
     else:
         sys.exit(0)
 sys.exit(0)
